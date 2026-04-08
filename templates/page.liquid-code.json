@@ -22,7 +22,9 @@
       "name": "Class 1",
       "settings": {
         "heading_text": "Hello How are you?",
-        "paragraph_text": "Tell your brand story here, and this place is you can write usefull information about brand."
+        "paragraph_text": "Tell your brand story here, and this place is you can write usefull information about brand.",
+        "mylucky_number": 1234,
+        "padding_top": 4
       }
     }
   },
