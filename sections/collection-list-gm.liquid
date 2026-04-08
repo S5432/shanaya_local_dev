@@ -1,14 +1,50 @@
-{%  schema %}
 
+<div class="collection-list-container-{{ section.id }}">
+    {% for block in section.blocks %}
+    <a class="collection-link-{{ section.id }}" href="{{block.settings.collection_link}}" target="_blank">
+        <img class="collection-image-{{ section.id }}" 
+             src="{{ block.settings.collection_image |image_url: width: 500 , height:500 }}" 
+             alt="Collection Image" />
+
+    </a>
+    {% endfor %}
+
+</div>
+
+
+
+{%  schema %}
 {
-"name": "Collection List GM",
-"settings": [],
-"blocks": [],
-"presets": [
-    {
-    "name": "Collection List GM"
-    }
-]
+    "name": "Collection List GM",
+    "settings": [],
+    "blocks": [
+      {
+     "type": "collection-list",
+      "name": "collection",
+      "settings": [
+            {
+                "type": "image_picker",
+                "id": "collection_image",
+                "label": "Select Image"
+            
+            },
+            {
+            "type" : "url",
+            "id": "collection_link",
+            "label": "Collection Link"
+            
+            }
+
+      ]
+
+     }
+
+    ],
+    "presets": [
+        {
+        "name": "Collection List GM"
+        }
+    ]
 }
 
 {% endschema %}
