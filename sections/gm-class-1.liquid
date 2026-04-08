@@ -1,6 +1,7 @@
 <style>
   h1{
 padding-top: {{ section.settings.padding_top  }}rem;
+font-size: {{ section.settings.headingfont_size }}px;
 }
 </style>
 
@@ -48,7 +49,18 @@ padding-top: {{ section.settings.padding_top  }}rem;
         "unit": "rem",
         "default": 2
         
-    }
+        },
+        {
+        "type": "range",
+        "id": "headingfont_size",
+        "label": "Heading Font Size",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "default":15
+
+         }
     ],
     "blocks": [],
     "presets": [
