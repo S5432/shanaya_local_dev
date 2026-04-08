@@ -21,7 +21,8 @@
       "type": "gm-class-1",
       "name": "Class 1",
       "settings": {
-        "heading_text": "Hello How are you?"
+        "heading_text": "Hello How are you?",
+        "paragraph_text": "Tell your brand story here, and this place is you can write usefull information about brand."
       }
     }
   },
