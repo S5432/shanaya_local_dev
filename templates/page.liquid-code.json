@@ -20,7 +20,9 @@
     "gm_class_1_8htwp9": {
       "type": "gm-class-1",
       "name": "Class 1",
-      "settings": {}
+      "settings": {
+        "heading_text": "Hello How are you?"
+      }
     }
   },
   "order": [
