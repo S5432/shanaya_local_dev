@@ -7,6 +7,8 @@ text-align: {{ section.settings.heading_alignment }};
 }
 </style>
 
+{{ section.settings.radio }}
+
 <div class="page-width">
     {%  if section.settings.show_heading == true %}
         <h1>{{ section.settings.heading_text  }}</h1>
@@ -92,6 +94,21 @@ text-align: {{ section.settings.heading_alignment }};
         "id": "show_heading",
         "label": "Show Heading",
         "default": true
+        },
+        {
+        "type": "radio",
+        "id": "radio",
+        "label": "Radio",
+        "options": [
+            {
+            "value": "This video is Good",
+            "label": "Good"
+            },
+            {
+            "value": "This video is Bad",
+            "label": "Bad"
+            }
+        ]
         }
     ],
     "blocks": [],
